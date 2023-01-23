@@ -9,15 +9,15 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
-    background: linear-gradient(to left, #ba7453, #d1a984);
+    height: 700px;
+    background: linear-gradient(to left, #047652, #00325b);
     z-index: -1;
 }
 
 nav{
     display: grid;
     grid-template-columns: 10% 1fr 1fr 1fr 10%;
-    min-height: 10vh;
+    min-height: 50px;
     color: white;
     align-items: center;
 }
@@ -27,42 +27,53 @@ nav{
     font-size: 24px;
 }
 
-#hamburger{
-    justify-self: end;
-    width: auto;
-    height: 10px;
-}
+
 
 section{
     display: flex;
-    height: 80vh;
+    height: 650px;
     justify-content: center;
     align-items: center;
 }
 
-.hero{
+.main-image-headers{
     height: 60%;
     width: 100%;
     position: relative;
 }
 
-.hero img {
+.main-image-headers img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    position: absolute;
+    /*border-radius: 5%;*/
 }
 
-.headline{
+.headlines {
+    top: 10%;
+    left: 7%; /* this becomes problem when screen resizes*/
     position: absolute;
-    top: 70%;
-    left: 10%;
-    font-size: 100px;
-    transform: translate(-20%,-70%);
     color: white;
     z-index: 3;
 }
 
-.hero::after{
+.headline1{
+    font-size: 50px;
+    transform: translate(-20%,-70%);
+}
+
+.headline2{
+    font-size: 25px;
+    transform: translate(-20%,-70%);
+}
+
+.headline3{
+    font-size: 25px;
+    transform: translate(-20%,-70%);
+}
+
+.main-image-headers::after{
     content: "";
     background: black;
     width: 100%;
@@ -71,4 +82,10 @@ section{
     left: 0;
     top: 0;
     opacity: 0.3;
+}
+
+.section-a {
+    
+    border-left: 10px;
+    border-top: 10px;
 }
