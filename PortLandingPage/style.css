@@ -16,7 +16,7 @@
 
 nav{
     display: grid;
-    grid-template-columns: 10% 1fr 1fr 1fr 10%;
+    grid-template-columns: 10% 1fr 1fr 1fr 1fr 1fr 10%;
     min-height: 50px;
     color: white;
     align-items: center;
